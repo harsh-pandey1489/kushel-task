@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap');
+@import "tailwindcss";
+
+
+body{
+    font-family: "Wix Madefor Display", sans-serif;
+
+}
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollright {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+   .animate-scroll-left {
+  animation: scrollLeft 20s linear infinite;
+}
+
+.animate-scroll-right {
+  animation: scrollright 20s linear infinite;
+}
