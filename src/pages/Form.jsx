@@ -10,16 +10,16 @@ const Form = () => {
   setCountry(e.target.value);
 };
   return (
-    <section className="w-full flex justify-center py-8 px-4">
+    <section className="max-w-[1720px] mx-auto flex justify-center pt-8 px-4">
       {/* container */}
-      <div className=" md:w-[70%] flex md:flex-row flex-wrap rounded-2xl">
+      <div className=" lg:w-[70%] flex md:flex-row flex-wrap rounded-2xl">
 
   
         <div className="p-10 flex flex-col items-center md:w-[35%] w-[100%] gap-6 bg-[#094AC6] md:rounded-l-2xl ">
           <div className="bg-[#6F8FFF]/80  p-6 rounded-xl text-white w-[90%]">
             <p className="text-sm opacity-90">Call Us</p>
 
-            <h2 className="text-2xl font-bold mt-2">
+            <h2 className="lg:text-2xl sm:text-sm  font-bold mt-2">
               +1-585-566-2070
             </h2>
 
@@ -30,15 +30,15 @@ const Form = () => {
 
       
           <div className="bg-white rounded-lg py-4 flex justify-center items-center w-[90%]">
-            <img src={google} alt="google review" className="h-9 object-contain" />
+            <img src={google}  className="h-9 object-contain" />
           </div>
 
           <div className="bg-white rounded-lg py-4 flex justify-center items-center w-[90%]">
-            <img src={clutch} alt="clutch review" className="h-9 object-contain" />
+            <img src={clutch} className="h-9 object-contain" />
           </div>
 
           <div className="bg-white rounded-lg py-4 flex justify-center items-center w-[90%]">
-            <img src={trustpilot} alt="trustpilot review" className="h-9 " />
+            <img src={trustpilot}  className="h-9 " />
           </div>
 
         </div>
@@ -49,9 +49,9 @@ const Form = () => {
           <h2 className="md:text-[22px] text-[17px] font-semibold mb-8 md:pr-9">
             Please fill in the form and let’s chat understand
             how we can help you better
-          </h2>
+         </h2>
 
-          <form className="space-y-3">
+         <form className="space-y-3">
 
             <div className="grid grid-cols-2 gap-3">
               <input
@@ -70,7 +70,7 @@ const Form = () => {
             <div className="flex gap-3">
 
               <div className="flex items-center justify-center bg-[#738FFF] px-3 cursor-pointer rounded-lg">
-                <img src={usa} alt="countries" className="w-5" />
+                <img src={usa}  className="w-5" />
                 <select
                 onChange={handlechange}
                 className="w-[30px] cursor-pointer bg-[#738FFF] outline-none">

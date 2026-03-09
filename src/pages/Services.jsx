@@ -59,7 +59,7 @@ const data = [
 ]
 const Services = () => {
     return (
-        <section className='w-full bg-white flex flex-col justify-center items-center'>
+        <section className='max-w-[1720px] mx-auto bg-white flex flex-col justify-center items-center'>
             <div className='max-w-[900px] flex  flex-col gap-2 text-center mt-10 '>
                 <p className='text-[26px]'>Unlock Growth and Success with a</p>
                 <h1 className='md:text-[33px] text-[22px] font-[500]'>Your full-service BigCommerce Development Partner</h1>
@@ -70,7 +70,7 @@ const Services = () => {
                     {data.map((item, index) => (
                         <div
                             key={index}
-                            className="w-full p-5 flex flex-col h-[350px] rounded-[6px] bg-[#55507F] text-white"
+                           className="w-full p-5 flex flex-col rounded-[6px] bg-[#55507F] text-white"
                         >
                             <div className='flex flex-row  justify-between items-center'>
                                 <div className='w-[70px] h-[70px] border-2 border-[#6da6ff] rounded-xl
@@ -81,8 +81,8 @@ const Services = () => {
                                 <div className='w-[30px] h-[30px]'><span>0</span>{index + 1}</div>
                             </div>
 
-                            <h1 className='text-[21px] font-[600] text-gray-200  py-4'>{item.head}</h1>
-                            <p className='text-gray-300'>{item.para}</p>
+                            <h1 className='lg:text-[21px] md:text-[16px]  font-[600] text-[#FFFFFF]  py-4'>{item.head}</h1>
+                            <p className='lg:text-[16px] md:text-[16px] text-[#FFFFFF] '>{item.para}</p>
                         </div>
                     ))
                     }
@@ -91,7 +91,7 @@ const Services = () => {
                 </div>
             </div>
             <div>
-                <button className='text-[#3464FD] border bg-[#e5edff] border-[#3464FD] font-[600]  items-center justify-center w-[200px] py-4 flex rounded-full gap-3 cursor-pointer my-9 '>
+                <button className='text-[#3464FD] border bg-[#e5edff] hover:bg-[#3464FD] hover:text-white border-[#3464FD] font-[600]  items-center justify-center w-[200px] py-4 flex rounded-full gap-3 cursor-pointer my-9 '>
                     Discuss a project<FaArrowRight size={14} />
                 </button>
             </div>

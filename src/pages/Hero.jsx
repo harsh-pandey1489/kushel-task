@@ -5,9 +5,8 @@ import whatsapp from "../assets/logo/whatsapp.png";
 
 const Hero = () => {
   return (
-    <section className="relative w-full min-h-[calc(100vh-140px)] flex items-center">
 
-   
+    <section className="relative w-full max-w-[1720px] mx-auto min-h-[700px] flex items-center">
       <img
         src={picture}
         alt="hero"
@@ -16,9 +15,9 @@ const Hero = () => {
 
       <div className="absolute inset-0 bg-[#0f4c4c]/80"></div>
 
-      <div className="relative mt-10 md:mt-0 max-w-7xl mx-auto w-full px-6 flex flex-col lg:flex-row items-center justify-between gap-12">
+      <div className="relative max-w-[1720px] mx-auto w-full px-4 sm:px-6 lg:px-22 flex flex-col lg:flex-row items-center justify-between gap-12">
 
-        <div className="text-white max-w-[600px] text-center lg:text-left">
+        <div className="text-white max-w-[600px] mt-[100px] lg:mt-0 text-center lg:text-left">
 
           <h1 className="text-[28px] md:text-[38px] lg:text-[44px] font-bold leading-[1.3] mb-3 md:mb-6">
             Custom{" "}
@@ -42,10 +41,12 @@ const Hero = () => {
               </span>
             </div>
 
-            <div className=" flex  w-[210px] md:max-w-[300px] md:p-5 p-3 items-center justify-center gap-3  bg-[#49C858] rounded-full text-white font-semibold text-[16px] md:text-[18px] shadow">
+            <a
+            href="whatsapp.com"
+             className=" flex  w-[210px] md:max-w-[300px] md:p-5 p-3 items-center justify-center gap-3  bg-[#49C858] rounded-full text-white font-semibold text-[16px] md:text-[18px] shadow">
               <img src={whatsapp} className="w-8" />
               Whatsapp
-            </div>
+            </a>
 
           </div>
         </div>
@@ -78,14 +79,14 @@ const Hero = () => {
               />
 
               <div className="flex gap-3">
-                <select className="border border-gray-300 p-3 rounded-md w-[120px]">
+                <select className="border sm:text-sm border-gray-300 p-3 rounded-md w-[30%]">
                   <option>USA (+1)</option>
                 </select>
 
                 <input
                   type="text"
                   placeholder="Mobile Number"
-                  className="border border-gray-300 p-3 rounded-md flex-1"
+                  className="border border-gray-300 w-[60%] p-3 rounded-md flex-1"
                 />
 
               </div>
@@ -100,7 +101,7 @@ const Hero = () => {
                 className="w-full border border-gray-300 p-3 rounded-md"
               />
 
-              <button className="w-full bg-blue-600 text-white py-3 rounded-full font-semibold text-[18px]">
+              <button className="w-full cursor-pointer bg-blue-600 text-white py-3 rounded-full font-semibold text-[18px]">
                 SUBMIT
               </button>
 

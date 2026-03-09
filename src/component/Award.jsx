@@ -4,13 +4,13 @@ import bigCommerce from "../assets/logo/BigCommerce.png";
 
 const Award = () => {
   return (
-    <section className="w-full bg-white md:py-12">
+    <section className="max-w-[1720px] mx-auto bg-white md:py-12">
 
-      <div className="mx-auto max-w-7xl">
+      <div className="  mx-auto max-w-7xl">
 
-        <div className="bg-[#FAFAFA] flex flex-col md:flex-row md:justify-between items-center gap-8 p-12 rounded-xl">
+        <div className="bg-[#FAFAFA] flex flex-col  md:flex-row md:justify-between items-center gap-8 p-12 rounded-xl">
 
-          <h1 className="text-[28px] md:text-[36px] lg:text-[40px] font-[500]  md:w-[500px] md:text-left text-center">
+          <h1 className="text-[28px] lg:text-[36px] lg:text-[40px] font-[500]  md:w-[500px] md:text-left text-center">
             Award-winning Agency Partner
           </h1>
 
@@ -18,12 +18,12 @@ const Award = () => {
 
             <img
               src={certified}
-              className="w-[200px] md:w-[230px]  bg-white rounded-full p-6"
+              className="w-[200px] sm:w-[170px] md:w-[200px] lg:w-[230px]  bg-white rounded-full p-6"
             />
 
             <img
               src={bigCommerce}
-              className="w-[200px] md:w-[230px]  bg-white rounded-full p-6"
+              className="w-[200px] sm:w-[170px] md:w-[200px] lg:w-[230px]   bg-white rounded-full p-6"
             />
 
           </div>

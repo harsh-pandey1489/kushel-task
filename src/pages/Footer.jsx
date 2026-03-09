@@ -19,16 +19,17 @@ const Footer = () => {
   });
 };
   return (
-    <footer className='w-full bg-[#FEFDFD]'>
+    <footer className='w-full pt-10 bg-[#FEFDFD]'>
      
       <div className='max-w-7xl mx-auto flex flex-col'>
         <div className="w-full flex md:flex-row flex-col gap-3 md:justify-between text-[#444444] py-6 px-10">
-          <div className="flex flex-col text-[17px] gap-5">
-            <div className="w-[200px]">
+
+          <div className="flex flex-col text-[18px] font-[400] gap-5">
+            <div className="w-[300px]">
               <img className="max-w-[170px] object-contain" src={kushellogo} />
             </div>
-            <p>Phone: +1-585-566-2070</p>
-            <p>Email: info@kusheldigi.com</p>
+            <p><span className="underline">Phone</span>: +1-585-566-2070</p>
+            <p><span className="underline">Email</span>: info@kusheldigi.com</p>
           </div>
 
           <div>

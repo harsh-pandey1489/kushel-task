@@ -35,7 +35,7 @@ const data=[
 
 const ChooseUs = () => {
   return (
-    <section className=' bg-[#D9D9D9] w-full py-10'>
+    <section className=' bg-[#D9D9D9]/20 w-full py-10'>
       <div className=' max-w-7xl  mx-auto flex flex-col gap-5 items-center'>
         <div className='mt-14 items-center text-center'>
              <p className='font-[600] text-[20px]'>Why choose us </p>

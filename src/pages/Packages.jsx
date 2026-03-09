@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import checkmark from "../assets/logo/checkmark 1.png"
 import { FaArrowRight} from "react-icons/fa6";
 const packages = [
@@ -48,15 +48,16 @@ const packages = [
 ];
 
 const Packages = () => {
+  const [active,setActive]=useState(null);
+
   return (
     <section className="w-full bg-[#f6f6f6] py-20">
-      <div className="max-w-[1200px] m-auto px-4">
+      <div className="max-w-[1200px] mx-auto px-6 sm:px-8 lg:px-4">
 
         <h2 className="text-center text-[40px] font-semibold mb-14">
           Our Packages
         </h2>
-
-        <div className="grid md:grid-cols-3 gap-8">
+       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
 
           {packages.map((item, index) => (
             <div
@@ -65,7 +66,7 @@ const Packages = () => {
             >
               
               {item.recommended && (
-                <div className="absolute top-0 left-0 w-full bg-blue-600 text-white text-center text-sm py-2 rounded-t-lg font-semibold">
+                <div className="absolute top-0 left-0 w-full bg-[#0B56E4] text-white text-center text-sm py-2 rounded-t-lg font-semibold">
                    RECOMMENDED
                 </div>
               )}
@@ -100,11 +101,9 @@ const Packages = () => {
                 </div>
               </div>
 
-              
-
               <h4 className="font-semibold mb-4 border-t-1 pt-8">Features :</h4>
 
-              <ul className="space-y-3 flex-1">
+           <ul className="space-y-6 max-h-[290px] overflow-y-auto custom-scrollbar flex-1">
                 {item.features.map((feature, index) => (
                   <li key={index} className="flex gap-3 text-sm">
                       
@@ -115,9 +114,11 @@ const Packages = () => {
                 ))}
               </ul>
 
-              <button className="mt-7 p-4 flex w-[250px] justify-center items-center gap-3 bg-blue-600 cursor-pointer text-white  rounded-full font-medium">
+             <div className="mt-auto w-full flex justify-center items-center">
+               <button className=" p-4 flex w-[250px] justify-center items-center gap-3 bg-[#0B56E4] cursor-pointer text-white  rounded-full font-medium">
                 GET STARTED TODAY <FaArrowRight size={14} />
               </button>
+             </div>
             </div>
           ))}
         </div>

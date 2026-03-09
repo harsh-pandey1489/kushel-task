@@ -23,9 +23,9 @@ const data = [
 
 const Experience = () => {
   return (
-    <section className="w-full bg-[#fdfdfe] flex items-center justify-center">
+    <section className="max-w-[1720px]  mx-auto bg-[#fdfdfe] flex items-center justify-center">
       
-      <div className=" w-full max-w-7xl mx-auto grid grid-cols-1 gap-4 md:gap-0 md:grid-cols-3 py-10">
+      <div className=" w-full px-20 mx-auto grid grid-cols-1 gap-4 md:gap-0 md:grid-cols-3 py-10">
 
         {data.map((item, index) => (
           <div

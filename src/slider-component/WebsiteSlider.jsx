@@ -6,7 +6,7 @@ const WebsiteSlider = ({ nextSlide, prevSlide }) => {
   return (
     <section className="w-full bg-[#FAFAFA] py-12 flex items-center">
 
-      <div className="max-w-[1200px] mx-auto w-full flex items-center md:justify-between flex-row  gap-6 px-6">
+      <div className="max-w-[1200px] mx-auto w-full flex items-center lg:justify-between flex-row  gap-6 px-6">
 
         <div>
           <h1 className="md:text-[58px] md:text-left text-[22px] font-[500] text-[#111]">

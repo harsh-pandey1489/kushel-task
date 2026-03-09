@@ -15,7 +15,7 @@ const logos = [logo1,logo2,logo3,logo4,logo5,logo6,logo7,logo8,logo9,logo10];
 
 const EcommerceBrand = () => {
   return (
-    <section className="bg-white flex flex-col justify-center items-center py-10 overflow-hidden">
+    <section className="bg-white max-w-[1720px] mx-auto flex flex-col justify-center items-center py-10 overflow-hidden">
 
       <h1 className="md:text-[29px] text-[24px] text-center mb-12">
         Trusted by Leading <span className="font-[600]">E-Commerce</span>{" "}
@@ -25,10 +25,10 @@ const EcommerceBrand = () => {
       {/* firstrow */}
       <div className="w-full overflow-hidden">
         <div className="flex gap-7 animate-scroll-left w-max">
-          {logos.map((item, index) => (
+          {[...logos,...logos].map((item, index) => (
   <div
                 key={index}
-              className="w-[180px] md:w-[220px] lg:w-[250px] h-[120px] md:h-[160px] lg:h-[200px] bg-[#F5F5F5] flex justify-center items-center"
+              className="w-[120px] md:w-[220px] lg:w-[250px] h-[70px] md:h-[160px] lg:h-[200px] bg-[#F5F5F5] flex justify-center items-center"
             >
         <img src={item} className="object-contain max-h-[80px]" />
             </div>
@@ -41,12 +41,12 @@ const EcommerceBrand = () => {
       <div className="w-full overflow-hidden mt-7">
         <div className="flex gap-7 animate-scroll-right w-max">
 
-          {logos.map((item, index) => (
+          {[...logos,...logos].map((item, index) => (
             <div
                 key={index}
-              className="w-[180px] md:w-[220px] lg:w-[250px] h-[120px] md:h-[160px] lg:h-[200px] bg-[#F5F5F5] flex justify-center items-center"
+              className="w-[120px] md:w-[220px] lg:w-[250px] h-[70px] md:h-[160px] lg:h-[200px] bg-[#F5F5F5] flex justify-center items-center"
             >
-              <img src={item} className="object-contain max-h-[80px] " />
+              <img src={item} className="object-contain max-h-[60px] md:max-h-[80px] " />
             </div>
           ))}
 

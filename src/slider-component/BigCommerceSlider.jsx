@@ -37,7 +37,7 @@ const sliderData = [
     revenue: "+40%",
     aov: "+5%",
     content: " Magento to BigCommerce Migration, Data Migration, BigCommerce store Design, Custom Theme Development, SEO, Integration.",
-  },
+  },  
   {
     logo: KickEzz,
     activeLogo: active3,
@@ -75,18 +75,17 @@ const sliderData = [
 
 const BigCommerceSlider = ({ activeIndex, setActiveIndex }) => {
   return (
-    <section className="w-full bg-[#EEF4EC] md:py-10 py-4 overflow-x-hidden">
-      <div className="max-w-7xl mx-auto overflow-hidden">
+    <section className="w-full bg-[#56C83C]/10 md:py-10 py-4 overflow-x-hidden">
+      <div className=" max-w-[1720px] mx-auto overflow-hidden">
 
-        {/* LOGO SLIDER */}
-        <div className="flex flex-wrap gap-5 md:gap-20 border-b pb-3 md:mb-12 justify-center">
+      <div className="flex max-w-7xl mx-auto flex-wrap md:flex-nowrap gap-5 md:gap-20 border-b pb-3 md:mb-10 justify-center">
           {sliderData.map((item, index) => (
             <div
               key={index}
               onClick={() => setActiveIndex(index)}
-              className="cursor-pointer relative pb-3 flex flex-col items-center"
+              className="cursor-pointer relative flex flex-col  items-center"
             >
-              <div className="w-[50px] h-[50px] md:w-[150px] md:h-[90px] flex items-center justify-center">
+              <div className="w-[50px] h-[50px] sm:w-[70px] sm:h-[70px] lg:w-[190px] lg:h-[120px]  flex items-center justify-center">
                 <img
                   src={activeIndex === index ? item.activeLogo : item.logo}
                   className="max-w-full max-h-full object-contain"
@@ -94,7 +93,7 @@ const BigCommerceSlider = ({ activeIndex, setActiveIndex }) => {
               </div>
 
               {activeIndex === index && (
-                <div className="absolute bottom-0 left-0 w-full h-[3px] bg-blue-600 rounded"></div>
+                <div className="absolute bottom-[-12px] left-0 w-full h-[3px] bg-[#0B56E4] rounded"></div>
               )}
             </div>
           ))}
@@ -103,65 +102,65 @@ const BigCommerceSlider = ({ activeIndex, setActiveIndex }) => {
         {/* dekstopslider */}
         <div
           key={activeIndex}
-          className="hidden md:flex items-center justify-between animate-slide"
+          className="hidden md:flex items-center justify-between p-10 animate-slide"
         >
 
-          <div className="w-[45%] ">
-            <div className="w-full  max-w-[520px] h-[320px] flex items-center justify-center overflow-hidden">
+          <div className="w-[40%] ">
+            <div className=" max-w-[550px] h-[350px] flex items-center justify-center overflow-hidden">
               <img
                 key={activeIndex}
                 src={sliderData[activeIndex].image}
-                className="max-h-full object-contain transition-all duration-500 ease-in-out translate-x-0"
+                className="max-h-full object-contain"
                 alt="laptop"
               />
             </div>
 
           </div>
 
-          <div className="flex mr-5  ">
-            <button className="bg-white w-[70px] h-[60px] text-[20px]">View</button>
-            <button className="bg-[#444951] w-[70px] h-[60px] flex justify-center items-center text-white ">
+          <div className="flex mr-10  ">
+            <button className="bg-white w-[80px] h-[60px] text-[20px]">View</button>
+            <button className="bg-[#444951] w-[80px] h-[60px] flex justify-center items-center text-white ">
               <img src={arrow} />
             </button>
           </div>
 
           {/* right section  */}
-          <div className="w-[45%]">
+          <div className="w-[50%]">
 
-            <h2 className="text-[36px] font-sem0ibold mb-4">
+            <h2 className="lg:text-5xl sm:text-3xl font-[500] mb-6">
               {sliderData[activeIndex].title}
             </h2>
 
             <div className="flex gap-3 mb-6">
-              <span className="bg-gray-200 px-3 py-1 rounded-full text-sm">
+              <span className="bg-white font-[500] px-3 py-1 rounded-full lg:text-xl">
                 B2B
               </span>
 
-              <span className="bg-gray-200 px-3 py-1 rounded-full text-sm">
+              <span className="bg-white font-[500] px-3 py-1 rounded-full lg:text-xl">
                 {sliderData[activeIndex].industry}
               </span>
             </div>
 
-            <p className="text-black- mb-6">
-              <span className="font-[500]">  What We Did:</span>
+            <p className="text-black- mb-6 lg:text-xl ">
+              <span className="font-[400] ">  What We Did:</span>
               <span>{sliderData[activeIndex].content}</span>
             </p>
 
-            <div className="space-y-3">
+            <div className="space-y-3 max-w-[400px]">
 
-              <div className="flex justify-between border-b pb-2">
+              <div className="flex lg:text-xl justify-between border-b pb-2">
                 <span>Increased Conversions</span>
-                <span>{sliderData[activeIndex].conversions}</span>
+                <span className="font-semibold">{sliderData[activeIndex].conversions}</span>
               </div>
 
-              <div className="flex justify-between border-b pb-2">
+              <div className="flex lg:text-xl  justify-between border-b pb-2">
                 <span>Increased Revenue</span>
-                <span>{sliderData[activeIndex].revenue}</span>
+                <span className="font-semibold">{sliderData[activeIndex].revenue}</span>
               </div>
 
-              <div className="flex justify-between border-b pb-2">
+              <div className="flex lg:text-xl  justify-between border-b pb-2">
                 <span>Increased AOV</span>
-                <span>{sliderData[activeIndex].aov}</span>
+                <span className="font-semibold">{sliderData[activeIndex].aov}</span>
               </div>
 
             </div>
@@ -192,11 +191,11 @@ const BigCommerceSlider = ({ activeIndex, setActiveIndex }) => {
               />
 
               <div className="flex absolute bottom-0">
-                <button className="bg-white w-[70px] h-[50px]">
+                <button className="bg-white w-[80px] h-[50px]">
                   View
                 </button>
 
-                <button className="bg-[#444951] w-[60px] flex justify-center items-center">
+                <button className="bg-[#444951] w-[80px] flex justify-center items-center">
                   <img src={arrow} />
                 </button>
               </div>
