@@ -35,17 +35,17 @@ const data=[
 
 const ChooseUs = () => {
   return (
-    <section className=' bg-[#D9D9D9]'>
-      <div className='flex flex-col gap-5 items-center'>
-        <div className='mt-20 items-center text-center'>
+    <section className=' bg-[#D9D9D9] w-full py-10'>
+      <div className=' max-w-7xl  mx-auto flex flex-col gap-5 items-center'>
+        <div className='mt-14 items-center text-center'>
              <p className='font-[600] text-[20px]'>Why choose us </p>
          <h1 className='text-[29px] font-[600]'>Whats make us better</h1>
         </div>
 
-        <div className='flex flex-wrap justify-center items-center gap-9 px-10 py-10'>
+        <div className='flex flex-wrap justify-center items-center gap-9  py-10'>
           {
             data.map((item,index)=>(
-               <div className='w-[380px] h-[220px] p-6 bg-[#F9FAFF] ' key={index}>
+               <div className='max-w-[380px] h-[220px] p-6 bg-[#F9FAFF] ' key={index}>
                    <div className='w-[50px] h-[50px] bg-[#d4f2f4] border-blue-100 rounded-[8px]'>
                     <img className='object-cover p-2' src={item.logo}/>
                    </div>

@@ -17,6 +17,7 @@ import GetStartedNow from './component/GetStartedNow'
 import Packages from './pages/Packages'
 import Question from './pages/Question'
 import Form from './pages/Form'
+import Footer from './pages/Footer'
 
 function App() {
 
@@ -24,7 +25,7 @@ function App() {
   return (
     <>
   <Navbar/>
-   {/* <div className="pt-[140px]"> */}
+   <div className="pt-[100px] overflow-x-hidden">
   <Hero/>
   <Award/>
   <ParentSlider/>
@@ -37,7 +38,8 @@ function App() {
  <Packages/>
  <Question/>
  <Form/>
- {/* </div> */}
+ <Footer/>
+ </div>
     </>
   )
 }

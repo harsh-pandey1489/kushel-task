@@ -1,23 +1,39 @@
-import React from 'react'
-import certified from '../assets/logo/certified.png'
-import bigCommerce from '../assets/logo/BigCommerce.png'
+import React from "react";
+import certified from "../assets/logo/certified.png";
+import bigCommerce from "../assets/logo/BigCommerce.png";
+
 const Award = () => {
   return (
-    <section className='w-full h-[300px] bg-[#FFFFFF] flex justify-center  item-center' >
-     <div className='w-[90%] h-[80%]  bg-[#FAFAFA] flex justify-between items-center px-10 mt-9'>
-         <h1 className='font-[500] text-[40px] w-[450px] gap-10 '>Award-winning Agency Partner</h1>
-      <div className=' flex gap-15 '>
-        <img className='w-[280px] h-[120px] bg-white rounded-full p-7' src={certified}/>
-         <img className='w-[280px] h-[120px] bg-white rounded-full p-7'  src={bigCommerce}/>
+    <section className="w-full bg-white md:py-12">
+
+      <div className="mx-auto max-w-7xl">
+
+        <div className="bg-[#FAFAFA] flex flex-col md:flex-row md:justify-between items-center gap-8 p-12 rounded-xl">
+
+          <h1 className="text-[28px] md:text-[36px] lg:text-[40px] font-[500]  md:w-[500px] md:text-left text-center">
+            Award-winning Agency Partner
+          </h1>
+
+          <div className="flex flex-row  md:flex-row gap-4 justify-center sm:flex-row items-center gap-6">
+
+            <img
+              src={certified}
+              className="w-[200px] md:w-[230px]  bg-white rounded-full p-6"
+            />
+
+            <img
+              src={bigCommerce}
+              className="w-[200px] md:w-[230px]  bg-white rounded-full p-6"
+            />
+
+          </div>
+
+        </div>
+
       </div>
-     </div>
+
     </section>
-  )
-}
+  );
+};
 
-export default Award
-
-
-
-
- 
+export default Award;

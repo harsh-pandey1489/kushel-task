@@ -17,7 +17,7 @@ const EcommerceBrand = () => {
   return (
     <section className="bg-white flex flex-col justify-center items-center py-10 overflow-hidden">
 
-      <h1 className="text-[29px] mb-12">
+      <h1 className="md:text-[29px] text-[24px] text-center mb-12">
         Trusted by Leading <span className="font-[600]">E-Commerce</span>{" "}
         <span className="font-[500]">Brands</span>
       </h1>
@@ -28,7 +28,7 @@ const EcommerceBrand = () => {
           {logos.map((item, index) => (
   <div
                 key={index}
-              className="w-[250px] h-[200px] bg-[#F5F5F5] flex justify-center items-center"
+              className="w-[180px] md:w-[220px] lg:w-[250px] h-[120px] md:h-[160px] lg:h-[200px] bg-[#F5F5F5] flex justify-center items-center"
             >
         <img src={item} className="object-contain max-h-[80px]" />
             </div>
@@ -44,9 +44,9 @@ const EcommerceBrand = () => {
           {logos.map((item, index) => (
             <div
                 key={index}
-              className="w-[250px] h-[200px] bg-[#F5F5F5] flex justify-center items-center"
+              className="w-[180px] md:w-[220px] lg:w-[250px] h-[120px] md:h-[160px] lg:h-[200px] bg-[#F5F5F5] flex justify-center items-center"
             >
-              <img src={item} className="object-contain max-h-[80px]" />
+              <img src={item} className="object-contain max-h-[80px] " />
             </div>
           ))}
 

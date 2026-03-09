@@ -5,16 +5,18 @@ import trustpilot from "../assets/form-logos/trustpilot.png";
 import usa from "../assets/form-logos/usa.png";
 
 const Form = () => {
-
-  const [country,setCountry]=useState('usa')
+  const [country,setCountry]=useState('usa');
+  const handlechange = (e) => {
+  setCountry(e.target.value);
+};
   return (
     <section className="w-full flex justify-center py-8 px-4">
       {/* container */}
-      <div className=" flex md:flex-row flex-col rounded-2xl">
+      <div className=" md:w-[70%] flex md:flex-row flex-wrap rounded-2xl">
 
   
-        <div className="p-10 flex flex-col items-center md:w-[50%] w-[100%] gap-6 bg-[#094AC6] md:rounded-l-2xl ">
-          <div className="bg-[#6F8FFF]/80  p-6 rounded-xl text-white w-[80%]">
+        <div className="p-10 flex flex-col items-center md:w-[35%] w-[100%] gap-6 bg-[#094AC6] md:rounded-l-2xl ">
+          <div className="bg-[#6F8FFF]/80  p-6 rounded-xl text-white w-[90%]">
             <p className="text-sm opacity-90">Call Us</p>
 
             <h2 className="text-2xl font-bold mt-2">
@@ -27,24 +29,24 @@ const Form = () => {
           </div>
 
       
-          <div className="bg-white rounded-lg py-4 flex justify-center items-center w-[80%]">
+          <div className="bg-white rounded-lg py-4 flex justify-center items-center w-[90%]">
             <img src={google} alt="google review" className="h-9 object-contain" />
           </div>
 
-          <div className="bg-white rounded-lg py-4 flex justify-center items-center w-[80%]">
+          <div className="bg-white rounded-lg py-4 flex justify-center items-center w-[90%]">
             <img src={clutch} alt="clutch review" className="h-9 object-contain" />
           </div>
 
-          <div className="bg-white rounded-lg py-4 flex justify-center items-center w-[80%]">
+          <div className="bg-white rounded-lg py-4 flex justify-center items-center w-[90%]">
             <img src={trustpilot} alt="trustpilot review" className="h-9 " />
           </div>
 
         </div>
 
         {/* rightdiv */}
-        <div className="p-10 text-white flex flex-col justify-center items-center md:rounded-r-2xl bg-[#0B56E4] ">
+        <div className="p-7 text-white flex flex-col justify-center items-center md:rounded-r-2xl bg-[#0B56E4] flex-1 ">
 
-          <h2 className="text-[22px] leading-snug font-semibold mb-8">
+          <h2 className="md:text-[22px] text-[17px] font-semibold mb-8 md:pr-9">
             Please fill in the form and let’s chat understand
             how we can help you better
           </h2>
@@ -55,21 +57,23 @@ const Form = () => {
               <input
                 type="text"
                 placeholder="First name*"
-                className="bg-[#6F8FFF]/70 h-[50px] px-3 rounded-lg outline-none placeholder-white/70"
+                className="bg-[#738FFF] h-[50px] px-3 rounded-lg outline-none placeholder-white/70"
               />
 
               <input
                 type="text"
                 placeholder="Last name*"
-                className="bg-[#6F8FFF]/70 h-[50px] px-3 rounded-lg outline-none placeholder-white/70"
+                className="bg-[#738FFF] h-[50px] px-3 rounded-lg outline-none placeholder-white/70"
               />
             </div>
 
             <div className="flex gap-3">
 
-              <div className="flex items-center justify-center bg-[#6F8FFF]/70 px-3 rounded-lg">
-                <img src={usa} alt="" className="w-5" />
-                <select className="w-[30px]">
+              <div className="flex items-center justify-center bg-[#738FFF] px-3 cursor-pointer rounded-lg">
+                <img src={usa} alt="countries" className="w-5" />
+                <select
+                onChange={handlechange}
+                className="w-[30px] cursor-pointer bg-[#738FFF] outline-none">
                 <option></option>
               <option>india</option>
                </select>
@@ -77,9 +81,10 @@ const Form = () => {
                
               <input
                 type="text"
-                placeholder="Phone*"
-                className="flex-1 bg-[#6F8FFF]/70 h-[50px] px-4 rounded-lg outline-none placeholder-white/70"
+                 readOnly
+                className="flex-1 bg-[#738FFF] h-[50px] px-4 rounded-lg outline-none placeholder-white/70"
                 value={country}
+                
               />
 
             </div>
@@ -88,10 +93,10 @@ const Form = () => {
             <input
               type="email"
               placeholder="Email*"
-              className="w-full bg-[#6F8FFF]/70 h-[50px] px-4 rounded-lg outline-none placeholder-white/70"
+              className="w-full bg-[#738FFF] h-[50px] px-4 rounded-lg outline-none placeholder-white/70"
             />
 
-            <select className="w-full bg-[#6F8FFF]/70 h-[50px] px-4 rounded-lg outline-none text-white">
+            <select className="w-full bg-[#738FFF] h-[50px] px-4 rounded-lg outline-none text-white">
               <option>Select Services*</option>
               <option>Web Development</option>
               <option>Ecommerce Development</option>
@@ -101,13 +106,13 @@ const Form = () => {
             <textarea
               rows="3"
               placeholder="Message*"
-              className="w-full bg-[#6F8FFF]/70 p-4 rounded-lg outline-none placeholder-white/70"
+              className="w-full bg-[#738FFF] p-4 rounded-lg outline-none placeholder-white/70"
             />
 
            
             <button
               type="submit"
-              className="w-full bg-white text-blue-600 h-[50px] rounded-full font-semibold mt-2
+              className="w-full bg-white text-[#0B56E4] h-[50px] rounded-full font-bold mt-2
               cursor-pointer "
             >
               let's connect →

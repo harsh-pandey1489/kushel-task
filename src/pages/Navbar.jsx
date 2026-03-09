@@ -1,19 +1,34 @@
-import React from 'react'
-import kushellogo from '../assets/logo/Kds logo 1.png'
+import React from "react";
+import kushellogo from "../assets/logo/Kds logo 1.png";
 import { IoIosCall } from "react-icons/io";
+
 const Navbar = () => {
-    return (
-        <nav className='w-full h-[140px] flex justify-between items-center'>
-            <img src={kushellogo} className='w-[260.1728515625px]  h-[82px] ml-[135px] ' />
-            <div className='flex justify-between items-center gap-4 mr-[135px]'>
-                <button className='w-[194px] h-[50px] cursor-pointer bg-[#3C83CB] text-[#FFFFFF] font-[700] text-[18px]  rounded-full flex items-center gap-2 p-5 '>
-                    <IoIosCall size={25} />CALL NOW</button>
+  return (
+    <nav className="fixed  w-full bg-white z-50 h-[100px] md:h-[130px] bg-white flex items-center  ">
+      
+      <div className="max-w-7xl mx-auto w-full px-6 flex justify-between items-center">
 
-                <button className='w-[310px] h-[50px] cursor-pointer font-semibold text-[24px] border-2 rounded-full border-[#3C83CB] text-[#3C83CB] '>Book Free Consulation</button>
-            </div>
+        <img
+          src={kushellogo}
+          className="w-[120px] md:w-[220px] lg:w-[260px]"
+        />
 
-        </nav>
-    )
-}
+        <div className="flex items-center gap-3 md:gap-4">
 
-export default Navbar
+          <button className="flex items-center cursor-pointer gap-2 bg-[#3C83CB] text-white font-semibold text-[8px] md:text-[16px] px-3 md:px-6 py-2 md:py-3 rounded-full">
+            <IoIosCall size={20} />
+            CALL NOW
+          </button>
+
+          <button className="cursor-pointer font-semibold text-[8px] md:text-[16px] border-2 border-[#3C83CB] text-[#3C83CB] px-3 md:px-6 py-2 md:py-3 rounded-full">
+            Book Free Consultation
+          </button>
+
+        </div>
+
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
