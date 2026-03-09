@@ -6,7 +6,7 @@ import laptop from "../assets/sliderImage/mackbook.png";
 import AAz from "../assets/Slider-logo/2AA.png";
 import arrow from "../assets/logo/Mask group.svg";
 import laptop2 from "../assets/sliderImage/macbook2.svg";
-import laptop3 from "../assets/sliderImage/Macbook3.svg";
+import laptop3 from "../assets/sliderImage/MacBook3.svg";
 import laptop4 from "../assets/sliderImage/MacBook4.svg";
 import laptop5 from "../assets/sliderImage/macbookMobile.svg";
 import active1 from "../assets/Ecommerce-image/topbrass (2).svg";
