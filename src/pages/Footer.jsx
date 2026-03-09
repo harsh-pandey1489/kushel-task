@@ -1,6 +1,6 @@
 import kushellogo from "../assets/logo/Kds logo 1.png";
 import followlogo from "../assets/logo/Frame 1000010954.png"
-import vector from "../assets/logo/vector.png"
+import vector from "../assets/logo/Vector.png"
 const quicklink = ["Home", "About ", "Service", "Portfolio", "Contact Us"];
 const services = [
   "Store Development & Setup",
